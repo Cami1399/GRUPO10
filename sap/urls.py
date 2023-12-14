@@ -18,7 +18,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from webapp.views import libreria
-from personas.views import agregar_libro, ver_libro, eliminar_libro, modificar_libro
+from personas.views import agregar_libro, ver_libro, eliminar_libro, modificar_libro, generar_reporte_libros
 
 
 urlpatterns = [
@@ -28,5 +28,6 @@ urlpatterns = [
     path('eliminar_libro/<int:id>/', eliminar_libro, name='eliminar_libro'),
     path('modificar_libro/<int:id>/', modificar_libro, name='modificar_libro'),
     path('ver_libro/<int:id>/', ver_libro, name='ver_libro'),
+    path('generar_reporte_libros/',generar_reporte_libros, name='generar_reporte_libros'),
 ]
 

@@ -25,7 +25,7 @@ class Libro(models.Model):
     sinopsis = models.TextField()
     disponibilidad = models.BooleanField(default=True)
 
-    # Otros campos del libro como autor, fecha de publicación, etc.
+
 
     def __str__(self):
         return f'{self.id} - {self.titulo}'
